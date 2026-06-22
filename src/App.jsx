@@ -115,7 +115,7 @@ const BIBLIOTECA_STD = [
   {nombre:"Regaliz (raíz)",grupo:"Raíces",gL:90,dias:12,dosis:5,rol:"backbone"},
   {nombre:"Ruibarbo",grupo:"Raíces",gL:80,dias:10,dosis:5,rol:"backbone"},
   // Hierbas y hojas
-  {nombre:"Peumo (hojas)",grupo:"Hierbas",gL:40,dias:7,dosis:8,rol:"body"},
+  {nombre:"Peumo (hojas)",grupo:"Hierbas",gL:40,dias:7,dosis:4,rol:"body"},
   {nombre:"Cedrón",grupo:"Hierbas",gL:35,dias:5,dosis:6,rol:"body"},
   {nombre:"Menta",grupo:"Hierbas",gL:30,dias:4,dosis:4,rol:"body"},
   {nombre:"Romero",grupo:"Hierbas",gL:40,dias:6,dosis:3,rol:"body"},
@@ -175,7 +175,7 @@ const RECETAS_HISTORICAS = [
       {id:"b2",nombre:"Raíz de angélica",mlL:"7",rol:"backbone",notas:"Amargo terroso, fijador"},
       {id:"b3",nombre:"Ruibarbo",mlL:"6",rol:"backbone",notas:"Amargo frutal, fruta roja"},
       {id:"b4",nombre:"Regaliz (raíz)",mlL:"5",rol:"backbone",notas:"Dulzor profundo"},
-      {id:"b5",nombre:"Peumo (hojas)",mlL:"9",rol:"body",notas:"ESTRELLA. Resinoso-balsámico"},
+      {id:"b5",nombre:"Peumo (hojas)",mlL:"4",rol:"body",notas:"Resinoso-balsámico, usar con moderación"},
       {id:"b6",nombre:"Murta",mlL:"12",rol:"body",notas:"Fruta roja del bosque"},
       {id:"b7",nombre:"Arrayán (bayas)",mlL:"8",rol:"body",notas:"Balsámico, fruta oscura"},
       {id:"b8",nombre:"Cardamomo",mlL:"5",rol:"body",notas:"Especias dulces"},
@@ -220,6 +220,71 @@ const RECETAS_HISTORICAS = [
       {id:"h45",nombre:"Piel de pomelo",mlL:"5",rol:"body",notas:"Cítrico amargo"},
       {id:"h46",nombre:"Menta",mlL:"4",rol:"body",notas:"Frescura herbal"},
       {id:"h47",nombre:"Cardamomo",mlL:"4",rol:"finish",notas:"Especiado cálido"},
+    ],
+  },
+  {
+    id:"hist_r3",nombre:"Teillery enero 2024",fecha:"27 ene 2024",
+    estilo:"vermouth_bianco",base:"Vino orgánico Teillery sin sulfitos",
+    perfil:"Herbal-cítrico con anís y especias cálidas",
+    procesoNotas:"Estimados desde receta de referencia.",
+    esHistorica:true,cata:{},
+    extractos:[
+      {id:"t1",nombre:"Ajenjo",mlL:"4",rol:"backbone",notas:"Backbone seco"},
+      {id:"t2",nombre:"Peumo (hojas)",mlL:"3",rol:"backbone",notas:"Resinoso territorial"},
+      {id:"t3",nombre:"Piel de naranja",mlL:"8",rol:"body",notas:"Cítrico principal"},
+      {id:"t4",nombre:"Piel de limón",mlL:"5",rol:"body",notas:"Cítrico fresco"},
+      {id:"t5",nombre:"Cedrón",mlL:"6",rol:"body",notas:"Herbal limón"},
+      {id:"t6",nombre:"Hinojo",mlL:"5",rol:"body",notas:"Anisado vegetal"},
+      {id:"t7",nombre:"Anís (semilla)",mlL:"4",rol:"body",notas:"Dulce anisado"},
+      {id:"t8",nombre:"Cardamomo",mlL:"4",rol:"finish",notas:"Especiado cálido"},
+      {id:"t9",nombre:"Canela cassia",mlL:"3",rol:"finish",notas:"Cálido de fondo"},
+    ],
+  },
+  {
+    id:"hist_r10",nombre:"Rosé agosto 2021 — Peumo",fecha:"14 ago 2021",
+    estilo:"vermouth_rosado",base:"Rosé Reserva Undurraga 2017",
+    perfil:"Especiado con peumo y notas cítricas, más robusto",
+    procesoNotas:"Época más especiada. Peumo más prominente.",
+    esHistorica:true,cata:{},
+    extractos:[
+      {id:"p1",nombre:"Ajenjo",mlL:"5",rol:"backbone",notas:"Backbone intenso"},
+      {id:"p2",nombre:"Peumo (hojas)",mlL:"4",rol:"backbone",notas:"Resinoso característico"},
+      {id:"p3",nombre:"Piel de naranja",mlL:"8",rol:"body",notas:"Cítrico dominante"},
+      {id:"p4",nombre:"Piel de pomelo",mlL:"5",rol:"body",notas:"Cítrico amargo"},
+      {id:"p5",nombre:"Cedrón",mlL:"6",rol:"body",notas:"Herbal limón"},
+      {id:"p6",nombre:"Canela cassia",mlL:"4",rol:"body",notas:"Especiado cálido"},
+      {id:"p7",nombre:"Anís (semilla)",mlL:"4",rol:"body",notas:"Anisado suave"},
+      {id:"p8",nombre:"Pimienta negra",mlL:"3",rol:"finish",notas:"Picante seco"},
+      {id:"p9",nombre:"Nuez moscada",mlL:"2",rol:"finish",notas:"Cálido de fondo"},
+    ],
+  },
+  {
+    id:"hist_r12",nombre:"Arrayán julio 2021",fecha:"4 jul 2021",
+    estilo:"vermouth_rosado",base:"Por definir",
+    perfil:"Frutal silvestre con arrayán como protagonista",
+    procesoNotas:"Época más especiada. Primera vez con arrayán como eje.",
+    esHistorica:true,cata:{},
+    extractos:[
+      {id:"a1",nombre:"Ajenjo",mlL:"5",rol:"backbone",notas:"Backbone — dosis 2021"},
+      {id:"a2",nombre:"Arrayán (bayas)",mlL:"10",rol:"body",notas:"Protagonista frutal"},
+      {id:"a3",nombre:"Piel de pomelo",mlL:"6",rol:"body",notas:"Cítrico amargo"},
+      {id:"a4",nombre:"Anís (semilla)",mlL:"5",rol:"body",notas:"Anisado dulce"},
+      {id:"a5",nombre:"Canela cassia",mlL:"4",rol:"finish",notas:"Especiado cálido"},
+      {id:"a6",nombre:"Pimienta negra",mlL:"3",rol:"finish",notas:"Picante seco"},
+    ],
+  },
+  {
+    id:"hist_r1",nombre:"Batch A — junio 2025",fecha:"2 jun 2025",
+    estilo:"vermouth_bianco",base:"Por definir",
+    perfil:"Floral-herbal sin ajenjo. Experimento con hibisco.",
+    procesoNotas:"Sin base documentada. Primera exploración sin ajenjo.",
+    esHistorica:true,cata:{},
+    extractos:[
+      {id:"f1",nombre:"Peumo (hojas)",mlL:"3",rol:"backbone",notas:"Backbone sin ajenjo"},
+      {id:"f2",nombre:"Hibisco",mlL:"6",rol:"body",notas:"Floral ácido, color"},
+      {id:"f3",nombre:"Hinojo",mlL:"5",rol:"body",notas:"Anisado vegetal"},
+      {id:"f4",nombre:"Cedrón",mlL:"6",rol:"body",notas:"Herbal limón"},
+      {id:"f5",nombre:"Menta",mlL:"4",rol:"body",notas:"Frescura herbal"},
     ],
   },
 ];
@@ -420,12 +485,13 @@ function TabFormulacion({recipe,setRecipe}){
                 {recipe.extractos.map(e=>(
                   <tr key={e.id}>
                     <td>
-                      {e.nombre?
-                        <span style={{color:T.cream,fontSize:13}}>{e.nombre}</span>:
-                        <input list="bib-list" value={e.nombre} onChange={ev=>updateExt(e.id,"nombre",ev.target.value)}
-                          placeholder="Nombre del extracto" style={{minWidth:130,fontSize:13}}/>
-                      }
-                      <datalist id="bib-list">{BIBLIOTECA_STD.map(b=><option key={b.nombre} value={b.nombre}/>)}</datalist>
+                      <input list="bib-list" value={e.nombre}
+                        onChange={ev=>updateExt(e.id,"nombre",ev.target.value)}
+                        placeholder="Nombre del extracto..."
+                        style={{minWidth:140,fontSize:13}}/>
+                      <datalist id="bib-list">
+                        {BIBLIOTECA_STD.map(b=><option key={b.nombre} value={b.nombre}/>)}
+                      </datalist>
                     </td>
                     <td>
                       <input type="number" value={e.mlL} onChange={ev=>updateExt(e.id,"mlL",ev.target.value)}
@@ -856,9 +922,9 @@ export default function App(){
       <style>{css}</style>
       <div className="app">
         <div className="header">
-          <div className="header-eyebrow">Destilería artesanal · Pelvín, sur de Chile</div>
-          <div className="header-title">Maestro <span>Vermutero</span></div>
-          <div className="header-sub">Formulación con extractos · Batch alcohólico · Costos · Cata</div>
+          <div className="header-eyebrow">Destilería artesanal del Sur del Mundo</div>
+          <div className="header-title">Vermu<span>tier</span></div>
+          <div className="header-sub">Maestro Vermutero · Formulación con extractos · Batch · Costos · Cata</div>
         </div>
 
         <div className="layout" style={{display:"flex",gap:18,alignItems:"flex-start"}}>
